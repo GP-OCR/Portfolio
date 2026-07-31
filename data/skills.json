@@ -1,0 +1,32 @@
+[
+    {
+        "image": "test.png",
+        "title": "Tests logiciels",
+        "text": "Tests exploratoires, unitaires et d'intégration, définition d'une stratégie de test, rédaction d'un cahier de recette, automatisation de tests E2E et d'API avec Cypress"
+    },
+    {
+        "image": "gestion-de-projet.png",
+        "title": "Gestion de projet & Agile",
+        "text": "Planification, méthodologies Agile/Scrum, gestion des anomalies avec Jira, reporting qualité (formation OpenClassrooms)"
+    },
+    {
+        "image": "optimisation-et-debug.png",
+        "title": "Optimisation et debug",
+        "text": "Identification des anomalies et correction d'un site existant, optimisation de la performance, audits Lighthouse"
+    },
+    {
+        "image": "html-css.jpg",
+        "title": "HTML & CSS",
+        "text": "Intégration d'interfaces responsives (projets OpenClassrooms)"
+    },
+    {
+        "image": "js.jpg",
+        "title": "JavaScript",
+        "text": "Manipulation du DOM, création d'éléments dynamiques, sites interactifs et scripts de test E2E/API (projets Print-it, Sophie Bluel et Eco Bliss Bath)"
+    },
+    {
+        "image": "react.jpg",
+        "title": "React",
+        "text": "Création d'une SPA avec React Router, composants réutilisables, state et tests unitaires (projet Kasa, OpenClassrooms)"
+    }
+]

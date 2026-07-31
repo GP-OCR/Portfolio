@@ -1,0 +1,26 @@
+[
+    {
+        "image": "projet-print-it.jpg",
+        "title": "Print-it : carrousel JavaScript",
+        "text": "Carrousel interactif en JavaScript vanilla pour le site d'une imprimerie : navigation par flèches et points, boucle infinie (projet OpenClassrooms, parcours Testeur QA).",
+        "link": "https://github.com/GP-OCR/Print-It"
+    },
+    {
+        "image": "projet-sophie-bluel.jpg",
+        "title": "Sophie Bluel : site dynamique JS",
+        "text": "Page web dynamique pour une architecte d'intérieur : récupération des travaux via API, galerie filtrable, authentification et modale d'administration (projet OpenClassrooms, parcours Testeur Logiciel).",
+        "link": "https://github.com/GP-OCR/Sophie-Bluel"
+    },
+    {
+        "image": "projet-kasa.jpg",
+        "title": "Kasa : plateforme React",
+        "text": "SPA React (Vite, React Router, Sass) pour une plateforme de location : carrousel, collapses, routing dynamique et tests unitaires Vitest. Données locales, conforme au brief OpenClassrooms (projet 8, parcours Testeur Logiciel).",
+        "link": "https://github.com/GP-OCR/Kasa"
+    },
+    {
+        "image": "projet-eco-bliss-bath.jpg",
+        "title": "Eco Bliss Bath : automatisation Cypress",
+        "text": "Campagne de tests automatisés en JavaScript (Cypress) sur une boutique Angular + API Symfony : 6 requêtes Swagger, smoke tests, faille XSS et parcours connexion/panier, avec bilan de campagne NO GO (projet 10, parcours Testeur Logiciel).",
+        "link": "https://github.com/GP-OCR/Eco-Bliss-Bath"
+    }
+]
