@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-    <!-- CSS custom après Bootstrap pour que les overrides s'appliquent -->
+    <!-- CSS du site après Bootstrap -->
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -21,8 +21,8 @@
         <div class="container">
             <a class="navbar-brand" href="#">Gaetan Pruvot</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,12 +43,11 @@
                         <a class="nav-link" href="#contact">Contactez-moi</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
 
-    <!-- main banner -->
+    <!-- bandeau d'accueil -->
     <section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
@@ -60,62 +59,79 @@
         </div>
     </section>
 
-    <!-- about section-->
+    <!-- a propos -->
     <section id="about">
         <div class="container mt-4 pt-4">
             <h2 class="text-center">A propos</h2>
             <div class="row mt-4">
                 <div class="col-lg-4">
-                    <img src="images/gaetan.jpg" class="imageAboutPage" alt="Portrait de Gaetan Pruvot" width="810" height="810">
+                    <img src="images/gaetan.jpg" class="imageAboutPage"
+                        alt="Portrait de Gaetan Pruvot" width="810" height="810">
                 </div>
-
                 <div class="col-lg-8">
-                    <p>Je suis en formation professionnalisante de Testeur Logiciel chez OpenClassrooms depuis
-                        février 2026. Ce parcours m'a permis d'acquérir une approche structurée de la qualité
-                        logicielle : tests manuels et exploratoires, stratégie de test, rédaction de cahiers de
-                        recette, automatisation de tests E2E et d'API avec Cypress, gestion des anomalies avec
-                        Jira, et travail en méthodologie Agile/Scrum.
+                    <p>
+                        Je suis en formation professionnalisante de Testeur
+                        Logiciel chez OpenClassrooms depuis février 2026.
+                        Ce parcours m'a permis d'acquérir une approche
+                        structurée de la qualité logicielle : tests manuels
+                        et exploratoires, stratégie de test, rédaction de
+                        cahiers de recette, automatisation de tests E2E et
+                        d'API avec Cypress, gestion des anomalies avec Jira,
+                        et travail en méthodologie Agile/Scrum.
                     </p>
-                    <p>Au fil des projets du cursus, j'ai aussi renforcé mes compétences techniques en HTML, CSS
-                        et JavaScript, ainsi que l'optimisation de la performance d'un site, notamment dans le cadre
+                    <p>
+                        Au fil des projets du cursus, j'ai aussi renforcé
+                        mes compétences techniques en HTML, CSS et
+                        JavaScript, ainsi que l'optimisation de la
+                        performance d'un site, notamment dans le cadre
                         de ce portfolio.
                     </p>
-                    <p class="mt-3"><strong>Recherche :</strong> poste de testeur logiciel / QA</p>
-                    <a class="btn btn-dark" href="https://github.com/GP-OCR" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> Mes projets OpenClassrooms sur GitHub
+                    <p class="mt-3">
+                        <strong>Recherche :</strong>
+                        poste de testeur logiciel / QA
+                    </p>
+                    <a class="btn btn-dark" href="https://github.com/GP-OCR"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        Mes projets OpenClassrooms sur GitHub
                     </a>
                 </div>
             </div>
-
             <div class="row mt-4">
                 <div class="col-lg-12 mt-3">
                     <h3>Formation OpenClassrooms</h3>
                     <ul>
-                        <li>Testeur Logiciel <small class="text-muted">(depuis février 2026)</small></li>
-                        <li>Projets réalisés : Print-it (carrousel JavaScript), Sophie Bluel (site dynamique),
-                            Kasa (SPA React), Eco Bliss Bath (automatisation Cypress), optimisation et déploiement de ce portfolio</li>
+                        <li>
+                            Testeur Logiciel
+                            <small class="text-muted">(depuis février 2026)</small>
+                        </li>
+                        <li>
+                            Projets réalisés : Print-it (carrousel JavaScript),
+                            Sophie Bluel (site dynamique), Kasa (SPA React),
+                            Eco Bliss Bath (automatisation Cypress),
+                            optimisation et déploiement de ce portfolio
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- skills section-->
+    <!-- competences -->
     <section id="skills">
         <div class="container">
             <h2 class="text-center">Mes compétences</h2>
         </div>
     </section>
 
-    <!-- portfolio section-->
+    <!-- projets -->
     <section id="portfolio">
         <div class="container mt-3">
             <h2 class="text-center">Mes projets</h2>
         </div>
     </section>
 
-    <!-- contact section-->
+    <!-- contact -->
     <section id="contact">
         <div class="container mt-3 contactContent">
             <h2 class="text-center">Contactez-moi</h2>
@@ -123,27 +139,33 @@
                 <div class="col-lg-4 mt-4 contactColumn">
                     <i class="fa-brands fa-github fa-4x"></i>
                     <h3>GitHub</h3>
-                    <p><a href="https://github.com/GP-OCR" target="_blank"
-                            rel="noopener noreferrer">GP-OCR</a></p>
+                    <p>
+                        <a href="https://github.com/GP-OCR"
+                            target="_blank" rel="noopener noreferrer">GP-OCR</a>
+                    </p>
                 </div>
                 <div class="col-lg-4 mt-4 contactColumn">
                     <i class="fa-regular fa-envelope fa-4x"></i>
                     <h3>Adresse email</h3>
-                    <p>pruvot.gaetan@gmail.com</p>
+                    <p>
+                        <a href="mailto:pruvot.gaetan@gmail.com">
+                            pruvot.gaetan@gmail.com
+                        </a>
+                    </p>
                 </div>
                 <div class="col-lg-4 mt-4 contactColumn">
                     <i class="fa-solid fa-briefcase fa-4x"></i>
                     <h3>Indeed</h3>
-                    <p><a href="https://profile.indeed.com/p/gaetanp-cwqpd3j" target="_blank"
-                            rel="noopener noreferrer">Gaetan Pruvot</a></p>
+                    <p>
+                        <a href="https://profile.indeed.com/p/gaetanp-cwqpd3j"
+                            target="_blank" rel="noopener noreferrer">Gaetan Pruvot</a>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
-
 </body>
 
 </html>
