@@ -18,16 +18,26 @@ la performance, déployer un site statique.
 
 | Outil | Objectif |
 |-------|----------|
-| Lighthouse | Performance |
+| Lighthouse | Scores de la page publiée |
+| WAVE | Erreurs et alertes sur la page publiée |
 | Console | Pas d'erreur JavaScript après le chargement des cartes |
 | Revue manuelle | Compétences, projets, contact, menu mobile |
+
+Rapports du 23 septembre 2026, dans le dépôt :
+
+- [rapport/rapport-wave.md](rapport/rapport-wave.md)
+  (0 erreur, 6 alertes, score AIM 9,9)
+- [rapport/rapport-lighthouse.md](rapport/rapport-lighthouse.md)
+  (avant : mobile 69, ordinateur 97. Après, sur la page
+  publiée, sans extension : mobile 100, ordinateur 100.
+  Accessibilité, bonnes pratiques et SEO : 100)
 
 Contrôles fonctionnels :
 
 - 0 erreur dans la console
 - 6 cartes de compétences
 - 4 cartes de projets avec image, texte et lien GitHub
-- Icônes Font Awesome visibles
+- Icônes de contact visibles (SVG dans la page)
 - Email cliquable (`mailto:`)
 - Menu hamburger lisible sur mobile
 
@@ -35,7 +45,7 @@ Contrôles fonctionnels :
 
 | # | Symptôme | Correction |
 |---|----------|------------|
-| 1 | Icônes contact invisibles | CDN Font Awesome dans `index.html` |
+| 1 | Icônes contact invisibles | d'abord le CDN Font Awesome, puis des SVG dans la page (la feuille bloquait le titre) |
 | 2 | Section Mes projets vide | `apendChild` -> `appendChild` |
 | 3 | Carte Test affiche `undefined` | clé JSON `"text"` |
 | 4 | Email non cliquable | lien `mailto:` |
@@ -45,21 +55,23 @@ Contrôles fonctionnels :
 
 | # | Theme | Actions |
 |---|-------|---------|
-| 1 | Images | Compression du hero (5,1 Mo -> 300 Ko), `loading="lazy"`, dimensions sur la photo |
+| 1 | Images | Bandeau : environ 5,1 Mo dans le zip de départ (pas dans git), 622 Ko au premier commit, 300 Ko maintenant. Aperçu Eco Bliss Bath : 386 Ko puis 27 Ko. Photo en 500 px. `loading="lazy"` sur les cartes |
 | 2 | Lisibilité | voile sombre sur le hero, texte blanc sur fond sombre |
-| 3 | Structure | titres h1 puis h2 puis h3, `style.css` après Bootstrap |
+| 3 | Structure | titres h1 puis h2 puis h3 |
+| 4 | CSS bloquant | Font Awesome retiré. Bootstrap en `media="print"` puis `all`, il ne bloque plus le premier affichage. `style.css` reste bloquant : il est petit et il dessine le bandeau |
 
 ## Lancement en local
 
 ```bash
-python3 -m http.server 8123
+python3 -m http.server 8123 -d docs
 ```
 
 Ouvrir http://localhost:8123
 
 ## Déploiement
 
-GitHub Pages sert la branche main, à la racine du dépôt.
+GitHub Pages sert le dossier `docs` de la branche main.
+Le rapport WAVE est dans `rapport/`, à la racine du dépôt.
 
 https://gp-ocr.github.io/Portfolio/
 
