@@ -1,1 +1,17 @@
 .DS_Store
+
+# Documents de travail locaux
+/docs/justifications/
+/notes/
+
+# Configuration locale des outils
+/.agents/
+/.claude/
+/.codex/
+/.grok/
+
+# Secrets locaux
+.env
+.env.*
+!.env.example
+ghp_*
