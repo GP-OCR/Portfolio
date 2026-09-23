@@ -3,8 +3,8 @@
 Portfolio de Gaetan Pruvot, testeur logiciel en formation
 OpenClassrooms (projet 12).
 
-Site statique : HTML, CSS, JavaScript et données JSON
-(`data/skills.json`, `data/portfolio.json`).
+Le code est dans le dossier `site` : HTML, CSS, JavaScript
+et JSON (`site/data/skills.json`, `site/data/portfolio.json`).
 
 ## Contexte
 
@@ -63,15 +63,16 @@ Contrôles fonctionnels :
 ## Lancement en local
 
 ```bash
-python3 -m http.server 8123 -d docs
+python3 -m http.server 8123 -d site
 ```
 
 Ouvrir http://localhost:8123
 
 ## Déploiement
 
-GitHub Pages sert le dossier `docs` de la branche main.
-Le rapport WAVE est dans `rapport/`, à la racine du dépôt.
+Le code du site est dans le dossier `site`.
+GitHub Pages publie seulement ce dossier.
+Les rapports sont dans `rapport/`, à la racine du dépôt.
 
 https://gp-ocr.github.io/Portfolio/
 

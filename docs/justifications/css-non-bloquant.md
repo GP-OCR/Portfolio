@@ -20,7 +20,7 @@ Date : 2026-09-23
   et mallette restent visibles. La grille, les cartes
   et le menu hamburger arrivent avec Bootstrap, sans
   décaler la barre ni le titre
-- Fichiers touchés : `docs/index.html`, `docs/style.css`,
+- Fichiers touchés : `site/index.html`, `site/style.css`,
   `README.md`
 
 ## Choix techniques
@@ -39,13 +39,13 @@ Date : 2026-09-23
 
 | Fichier | Fonction / bloc | Justifié par |
 |---------|-----------------|--------------|
-| `docs/index.html` | lien Bootstrap `media="print"` | Bootstrap en print puis all |
-| `docs/index.html` | bloc `noscript` | sans JavaScript |
-| `docs/index.html` | `svg.icon` | icônes en SVG |
-| `docs/style.css` | `body`, `.fixed-top`, `.container`, `.navbar*` | la barre ne saute pas |
-| `docs/style.css` | `.hero_title`, `.hero_desc`, padding de `.hero-text` | titre stable |
-| `docs/style.css` | `nav.navbar-dark` | liens blancs |
-| `docs/style.css` | `.icon` | taille des SVG |
+| `site/index.html` | lien Bootstrap `media="print"` | Bootstrap en print puis all |
+| `site/index.html` | bloc `noscript` | sans JavaScript |
+| `site/index.html` | `svg.icon` | icônes en SVG |
+| `site/style.css` | `body`, `.fixed-top`, `.container`, `.navbar*` | la barre ne saute pas |
+| `site/style.css` | `.hero_title`, `.hero_desc`, padding de `.hero-text` | titre stable |
+| `site/style.css` | `nav.navbar-dark` | liens blancs |
+| `site/style.css` | `.icon` | taille des SVG |
 | `README.md` | tableau des optimisations | ce que le jury lit |
 
 ## Notes
