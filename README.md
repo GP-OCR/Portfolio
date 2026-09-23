@@ -57,6 +57,12 @@ python3 -m http.server 8123
 
 Ouvrir http://localhost:8123
 
+## Déploiement
+
+GitHub Pages sert la branche main, à la racine du dépôt.
+
+https://gp-ocr.github.io/Portfolio/
+
 ## Projets présentés
 
 - [Print-It](https://github.com/GP-OCR/Print-It)
