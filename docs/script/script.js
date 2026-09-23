@@ -92,7 +92,7 @@ function skillCard(item) {
     if (src !== "") {
         img.src = src;
     }
-    img.alt = asText(item.title);
+    img.alt = "";
     img.loading = "lazy";
     title.classList.add("card-title", "mt-3");
     title.textContent = asText(item.title);
@@ -132,7 +132,7 @@ function projectCard(item) {
     link.href = pageLink(item.link);
     link.target = "_blank";
     link.rel = "noopener noreferrer";
-    link.textContent = "Lien";
+    link.textContent = "Voir sur GitHub";
     wrap.appendChild(link);
     body.appendChild(title);
     body.appendChild(text);
