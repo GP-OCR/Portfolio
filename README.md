@@ -3,8 +3,8 @@
 Portfolio de Gaetan Pruvot, testeur logiciel en formation
 OpenClassrooms (projet 12).
 
-Le code est dans le dossier `site` : HTML, CSS, JavaScript
-et JSON (`site/data/skills.json`, `site/data/portfolio.json`).
+Le code est dans le dossier `docs` : HTML, CSS, JavaScript
+et JSON (`docs/data/skills.json`, `docs/data/portfolio.json`).
 
 ## Contexte
 
@@ -63,15 +63,15 @@ Contrôles fonctionnels :
 ## Lancement en local
 
 ```bash
-python3 -m http.server 8123 -d site
+python3 -m http.server 8123 -d docs
 ```
 
 Ouvrir http://localhost:8123
 
 ## Déploiement
 
-Le code du site est dans le dossier `site`.
-GitHub Pages publie seulement ce dossier.
+Le code du site est dans le dossier `docs`.
+GitHub Pages publie ce dossier depuis la branche `main`.
 Les rapports sont dans `rapport/`, à la racine du dépôt.
 
 https://gp-ocr.github.io/Portfolio/
